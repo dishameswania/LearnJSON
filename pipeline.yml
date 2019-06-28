@@ -10,7 +10,7 @@ resources:
       sourceArtifactory: artdisha
       buildName: go_example_build
       buildNumber: 1
-  - name: files
+  - name: files1
     type: FileSpec
     configuration:
       sourceArtifactory: artdisha
@@ -35,7 +35,7 @@ pipelines:
           outputFile: hello
           inputResources:
             - name: artifactory_go_example
-            - name: files
+            - name: files1
           integrations:
             - name: artdisha
         execution:
